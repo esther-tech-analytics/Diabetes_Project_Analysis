@@ -40,6 +40,8 @@ for bar in ax.patches:
 plt.title("Average BMI by Diabetes Status")
 plt.xlabel("Diabetes Group")
 plt.ylabel("Average BMI")
+plt.xticks([0, 1, 2],
+           ["No Diabetes", "Prediabetes", "Diabetes"])
 
 plt.tight_layout()
 plt.savefig("Q1_BMI.png")
@@ -63,6 +65,8 @@ physical_health.plot(
 plt.title("Average Physically Unhealthy Days")
 plt.xlabel("Diabetes Group")
 plt.ylabel("Average Days")
+plt.xticks([0, 1, 2],
+           ["No Diabetes", "Prediabetes", "Diabetes"])
 
 plt.tight_layout()
 plt.savefig("Q2_PhysicalHealth.png")
@@ -86,6 +90,8 @@ mental_health.plot(
 plt.title("Average Poor Mental Health Days")
 plt.xlabel("Diabetes Group")
 plt.ylabel("Average Days")
+plt.xticks([0, 1, 2],
+           ["No Diabetes", "Prediabetes", "Diabetes"])
 
 plt.tight_layout()
 plt.savefig("Q3_MentalHealth.png")
@@ -116,6 +122,8 @@ for bar in ax.patches:
 plt.title("Average Age by Diabetes Status")
 plt.xlabel("Diabetes Group")
 plt.ylabel("Average Age")
+plt.xticks([0, 1, 2],
+           ["No Diabetes", "Prediabetes", "Diabetes"])
 
 plt.tight_layout()
 plt.savefig("Q4_Age.png")
@@ -166,6 +174,8 @@ for bar in ax.patches:
 plt.title("General Health Score")
 plt.xlabel("Diabetes Group")
 plt.ylabel("Health Score")
+plt.xticks([0, 1, 2],
+           ["No Diabetes", "Prediabetes", "Diabetes"])
 
 plt.tight_layout()
 plt.savefig("Q6_GeneralHealth.png")
@@ -215,6 +225,8 @@ for bar in ax.patches:
 plt.title("Stroke Rate by Diabetes Status")
 plt.xlabel("Diabetes Group")
 plt.ylabel("Percentage")
+plt.xticks([0, 1, 2],
+           ["No Diabetes", "Prediabetes", "Diabetes"])
 
 plt.tight_layout()
 plt.savefig("Q8_Stroke.png")
@@ -265,6 +277,8 @@ for bar in ax.patches:
 plt.title("Doctor Cost Problems")
 plt.xlabel("Diabetes Group")
 plt.ylabel("Percentage")
+plt.xticks([0, 1, 2],
+           ["No Diabetes", "Prediabetes", "Diabetes"])
 
 plt.tight_layout()
 plt.savefig("Q10_DoctorCost.png")
@@ -317,6 +331,8 @@ for bar in ax.patches:
 plt.title("Average Income by Diabetes Status")
 plt.xlabel("Diabetes Group")
 plt.ylabel("Income Level")
+plt.xticks([0, 1, 2],
+           ["No Diabetes", "Prediabetes", "Diabetes"])
 
 plt.tight_layout()
 plt.savefig("Q12_Income.png")
@@ -348,6 +364,9 @@ for bar in ax.patches:
 plt.title("High BP and High Cholesterol")
 plt.xlabel("Diabetes Group")
 plt.ylabel("Percentage")
+plt.xticks([0, 1, 2],
+           ["No Diabetes", "Prediabetes", "Diabetes"],
+           rotation=0)
 
 plt.tight_layout()
 plt.savefig("Q13_BP_Chol.png")
@@ -416,7 +435,8 @@ plt.xlabel("Daily Consumption")
 plt.ylabel("Average Diabetes Score")
 
 plt.legend()
-
+plt.xticks([0, 1],
+           ["No Daily Intake", "Daily Intake"])
 plt.tight_layout()
 plt.savefig("Q15_FruitsVeggies.png")
 plt.show()
